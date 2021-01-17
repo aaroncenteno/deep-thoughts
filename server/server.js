@@ -32,7 +32,7 @@ if(process.env.NODE_ENV === 'production') {
 }
 
 app.get("/serviceWorker.js", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../client/src", "serviceWorker.js"));
+  res.sendFile(path.resolve(__dirname, "../client/build", "serviceWorker.js"));
 });
 
 app.get('*', (req, res) => {
